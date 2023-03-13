@@ -44,7 +44,7 @@ ejecutar hasta que se presione el botón. */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Formas de declarar un función: ///
-sayHiDeclaration(); // Se está haciendo hoisting y se va a ejecutar en el caso de delcaration
+sayHiDeclaration(); // Se está haciendo hoisting y se va a ejecutar en el caso de declaration
 //sayHiExpression(); // Para la función de expresión marcara un error de que no puede inicialiarse antes.
 
 //* Function declaration:
@@ -147,7 +147,7 @@ const myGen = miGenerador()
 console.log(myGen.next());
 console.log(myGen.next());
 console.log(myGen.next());
-
+console.log(myGen.next());
 
 function* fibonacciSeq() {
     let start1 = 0; start2 = 1, cnt = 2;

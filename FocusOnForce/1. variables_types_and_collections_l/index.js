@@ -34,6 +34,12 @@ printAge()
 // let age; can not access variable before inizialization. Lo mismo pasa con const.
 var age;  // undefined.
 
+
+function printAge() {
+    console.log(age);
+}
+printAge()
+var age;  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //* Ejemplo de creación de un objeto literal:
 var animal = {

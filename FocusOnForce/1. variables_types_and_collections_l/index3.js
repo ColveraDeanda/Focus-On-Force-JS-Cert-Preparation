@@ -8,8 +8,7 @@ const str = 'Time: ';
 const time = 25;
 console.log(str + time);
 
-//*Cuando se compara un string con un número en JavaScript, el intérprete de JavaScript trata el string 
-//*como un número y lo convierte a NaN
+//*Dentro de un contexto boleano entre string y number, se trata de convertir el string a un número.
 console.log(str == 5);
 
 if(str && time) {
@@ -27,9 +26,10 @@ console.log(bool > 0);
 console.log(str2 <= 2);
 
 console.log(bool + 4);
+//* Igualmnete para cálculos entre un string y number, se trata de convertir el string a un número.
 console.log(str2 - 2);
 
-//*Nota: Tanto en un contexto booleano y operaciones matematicas, js hace coerción de string a number con '5';
+//*Key point: Tanto en un contexto booleano y operaciones matematicas, js hace coerción de string a number.
 
 // Converción a number con +
 console.log(+bool);
@@ -105,17 +105,17 @@ Boolean(new Date())
 Boolean(Symbol())
 Boolean('0')
 Boolean('false')
-Boolean(infinity);
+Boolean(Infinity);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function convertBool(obj,prop) {
-    obj[prop] = Boolean(obj[prop]);
+    return obj[prop] = Boolean(obj[prop]);
 }
 let boardRoom= {
     capacity: 40,
     reservable: 0
 }
-convertBool(boardRoom, "reservable");
+console.log(convertBool(boardRoom, "reservable"));
 console.log(boardRoom);
 
 //////////////////////////////////////////////////////////////////////////////////////////

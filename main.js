@@ -98,7 +98,6 @@ console.log(sumValues(...[1,2,3]));
 // * Ejercicio 9: Identify data type
 const num = 123.4566;
 console.log(typeof num);
-
 // * Ejercicio 10: What´s the output ?
 let output = true + 13 + '200' + null;
 console.log(output);
@@ -138,45 +137,48 @@ dessert.type = 'pudding';
 console.log(dessert.type);
 
 // * Ejercicio 17: Find Output
-console.log(0 && hi); // ? por alguna razón devuelve 0.
+console.log(0 && hi); //? si los 2 son true, devuelve el 2do valor. Si uno es false, devuelve el valor falso..
 
-// * Ejercicio AlgoExpert:
-// Por lo menos 3 enteros son necesarios para formar un peak.
-    // findIndex del elemento más grande para saber cual es el peak.
-    // Empezar la iteración.
-    // hacer una condición para saber si el elemento actual es diferente al peak.
-    // Si true, ir comparando si el 1er elemento es menor que el 2do
+//* Ejercicio 18: Which statement sets the Person constructor as the parent of the Student constructor
+//*               in the prototype chain.
 
-    //* Res = 0, 10, 6, 5, -1, -3
-function longestPeak(array) {
-    let longestPeak = [];
-    let peak = Math.max(...array);
-    let reachPeak = false;
-    
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] != peak && !reachPeak) { //* menor que el peak
-            if(array[i] < array[i + 1]) {
-                longestPeak.push(array[i]);
-            } else {
-                longestPeak = [];
-            }
-        } else {  //* mayor al peak
-            if(array[i] > array[i + 1]) {
-                reachPeak = true;
-                longestPeak.push(array[i]);
-            } else {
-                longestPeak.push(array[i]);
-                break;
-            }
-        }
-        
-    }
-    return longestPeak.length;
-    
+//* R = Student.prototype = new Person();
+
+//* Ejercicio 19: What is the result of running this code ?
+//* R = 30, referenceError.
+sum(10, 20);
+
+//diff(10, 20);
+function sum(x , y) {
+    console.log(x + y);
 }
 
-console.log(longestPeak([5, 4, 3, 2, 1, 2, 1]))
+let diff = function(x, y) {
+    console.log(x - y);
+}
 
+//* Ejercicio 20: Result of running this code ? 
+for(let i = 0; i < 5; i++) {
+    console.log(i)
+}
 
+//* Ejercicio 21: output ?
+let k = 100;
+console.log(k++)
+console.log(k);
+console.log(++k);
+
+//* Ejercicio 22: 
+let obj = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+console.log(Object.keys(obj));
+
+//* Ejercicio 23: value of length ?
+var a = ['dog', 'cat', 'hen'];
+a[100] = 'fox';
+console.log(a.length);
 
 

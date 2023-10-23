@@ -1,6 +1,6 @@
 /**
  * Functions are firts class (treated as values).
- * They can act sa higher order functions (receive functions as arguments or return functions). 
+ * They can act as higher order functions (receive functions as arguments or return functions). 
  */
 
 //* Key point: Es posible manipular una función como si fuera otro value. Por ejem:

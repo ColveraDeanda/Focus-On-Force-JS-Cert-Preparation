@@ -137,7 +137,6 @@ console.log(arr6.flat(Infinity));
  * 5. padStart, padEnd
  */
 
-// Continuar con Given a JSON response, demonstrate how to operate the JSON object.
 
 
 

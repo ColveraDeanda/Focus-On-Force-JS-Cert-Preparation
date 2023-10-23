@@ -14,7 +14,7 @@ console.log(!!NaN);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Loose equality = converts one or both sides and then performs the final equality comparison.
 console.log(Boolean('1' == 1));
-console.log(Boolean(1 == ['1'])); //* Cuando se compara un número (1) con una matriz (['1']), JavaScript convierte automáticamente la matriz a una cadena, concatenando los elementos de la matriz separados por comas
+console.log(Boolean(1 == ['1', '2'])); //* Cuando se compara un número (1) con una matriz (['1']), JavaScript convierte automáticamente la matriz a una cadena, concatenando los elementos de la matriz separados por comas
 console.log(Boolean(1 == [1]));
 console.log(Boolean(1 == 1));
 console.log(Boolean([1] == [1])); //* Si son dos arreglos en diferente espacio en memoria, dará false
@@ -29,7 +29,4 @@ console.log(Boolean([1] === [1]));
 console.log(Boolean({} === {}));
 
 // Special case:
-console.log(undefined == null)
-
-// Me quedé en el comienzo de:
-// Given a list of data, demonstrate data manipulation with arrays (Variables, types and Collections II)
+console.log(undefined === null)

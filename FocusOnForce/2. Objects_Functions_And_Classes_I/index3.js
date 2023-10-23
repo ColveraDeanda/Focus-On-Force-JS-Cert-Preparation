@@ -112,7 +112,7 @@ class User4 {
 }
 class Employee1 extends User4 {
     constructor(id) {
-        super()
+        super() //* super: está llamando al constructor padre.
         this.employeeId = id;
     }
 }
